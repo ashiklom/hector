@@ -10,23 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -53,7 +57,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -142,6 +146,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -186,6 +195,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -224,6 +238,11 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
@@ -236,6 +255,12 @@
           <p><code><a href="concentrations.html">ATMOSPHERIC_N2O()</a></code> <code><a href="concentrations.html">PREINDUSTRIAL_N2O()</a></code> <code><a href="concentrations.html">PREINDUSTRIAL_O3()</a></code> <code><a href="concentrations.html">ATMOSPHERIC_O3()</a></code> </p>
         </td>
         <td><p>Identifiers for miscellaneous concentrations not elsewhere described</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="constraints.html">CH4_CONSTRAIN()</a></code> <code><a href="constraints.html">N2O_CONSTRAIN()</a></code> </p>
+        </td>
+        <td><p>Identifiers for concentration constraints</p></td>
       </tr><tr>
         
         <td>
@@ -263,7 +288,7 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="forcings.html">RF_TOTAL()</a></code> <code><a href="forcings.html">RF_T_ALBEDO()</a></code> <code><a href="forcings.html">RF_CO2()</a></code> <code><a href="forcings.html">RF_N2O()</a></code> <code><a href="forcings.html">RF_H2O()</a></code> <code><a href="forcings.html">RF_O3()</a></code> <code><a href="forcings.html">RF_BC()</a></code> <code><a href="forcings.html">RF_OC()</a></code> <code><a href="forcings.html">RF_SO2D()</a></code> <code><a href="forcings.html">RF_SO2I()</a></code> <code><a href="forcings.html">RF_SO2()</a></code> <code><a href="forcings.html">RF_VOL()</a></code> <code><a href="forcings.html">RF_CH4()</a></code> </p>
+          <p><code><a href="forcings.html">RF_TOTAL()</a></code> <code><a href="forcings.html">RF_T_ALBEDO()</a></code> <code><a href="forcings.html">RF_CO2()</a></code> <code><a href="forcings.html">RF_N2O()</a></code> <code><a href="forcings.html">RF_H2O_STRAT()</a></code> <code><a href="forcings.html">RF_O3_TROP()</a></code> <code><a href="forcings.html">RF_BC()</a></code> <code><a href="forcings.html">RF_OC()</a></code> <code><a href="forcings.html">RF_SO2D()</a></code> <code><a href="forcings.html">RF_SO2I()</a></code> <code><a href="forcings.html">RF_SO2()</a></code> <code><a href="forcings.html">RF_VOL()</a></code> <code><a href="forcings.html">RF_CH4()</a></code> </p>
         </td>
         <td><p>Identifiers for capabilities in the Hector forcing component</p></td>
       </tr><tr>
@@ -281,13 +306,19 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="haloemiss.html">EMISSIONS_CF4()</a></code> <code><a href="haloemiss.html">EMISSIONS_C2F6()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC23()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC32()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC4310()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC125()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC134A()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC143A()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC227EA()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC245FA()</a></code> <code><a href="haloemiss.html">EMISSIONS_SF6()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC11()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC12()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC113()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC114()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC115()</a></code> <code><a href="haloemiss.html">EMISSIONS_CCL4()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3CCL3()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCF22()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCF141B()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCF142B()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON1211()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON1301()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON2402()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3CL()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3BR()</a></code> </p>
+          <p><code><a href="haloconstrain.html">CF4_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">C2F6_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC23_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC32_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC4310_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC125_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC134A_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC143A_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC227EA_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HFC245FA_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">SF6_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CFC11_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CFC12_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CFC113_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CFC114_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CFC115_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CCL4_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CH3CCL3_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HCFC22_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HCFC141B_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HCFC142B_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HALON1211_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HALON1301_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">HALON2402_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CH3CL_CONSTRAIN()</a></code> <code><a href="haloconstrain.html">CH3BR_CONSTRAIN()</a></code> </p>
+        </td>
+        <td><p>Identifiers for halocarbon concentration constraints</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="haloemiss.html">EMISSIONS_CF4()</a></code> <code><a href="haloemiss.html">EMISSIONS_C2F6()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC23()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC32()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC4310()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC125()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC134A()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC143A()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC227EA()</a></code> <code><a href="haloemiss.html">EMISSIONS_HFC245FA()</a></code> <code><a href="haloemiss.html">EMISSIONS_SF6()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC11()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC12()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC113()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC114()</a></code> <code><a href="haloemiss.html">EMISSIONS_CFC115()</a></code> <code><a href="haloemiss.html">EMISSIONS_CCL4()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3CCL3()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCFC22()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCFC141B()</a></code> <code><a href="haloemiss.html">EMISSIONS_HCFC142B()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON1211()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON1301()</a></code> <code><a href="haloemiss.html">EMISSIONS_HALON2402()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3CL()</a></code> <code><a href="haloemiss.html">EMISSIONS_CH3BR()</a></code> </p>
         </td>
         <td><p>Identifiers for halocarbon emissions</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="haloforcings.html">RF_CF4()</a></code> <code><a href="haloforcings.html">RF_C2F6()</a></code> <code><a href="haloforcings.html">RF_HFC23()</a></code> <code><a href="haloforcings.html">RF_HFC32()</a></code> <code><a href="haloforcings.html">RF_HFC4310()</a></code> <code><a href="haloforcings.html">RF_HFC125()</a></code> <code><a href="haloforcings.html">RF_HFC134A()</a></code> <code><a href="haloforcings.html">RF_HFC143A()</a></code> <code><a href="haloforcings.html">RF_HFC227EA()</a></code> <code><a href="haloforcings.html">RF_HFC245FA()</a></code> <code><a href="haloforcings.html">RF_SF6()</a></code> <code><a href="haloforcings.html">RF_CFC11()</a></code> <code><a href="haloforcings.html">RF_CFC12()</a></code> <code><a href="haloforcings.html">RF_CFC113()</a></code> <code><a href="haloforcings.html">RF_CFC114()</a></code> <code><a href="haloforcings.html">RF_CFC115()</a></code> <code><a href="haloforcings.html">RF_CCL4()</a></code> <code><a href="haloforcings.html">RF_CH3CCL3()</a></code> <code><a href="haloforcings.html">RF_HCF22()</a></code> <code><a href="haloforcings.html">RF_HCF141B()</a></code> <code><a href="haloforcings.html">RF_HCF142B()</a></code> <code><a href="haloforcings.html">RF_HALON1211()</a></code> <code><a href="haloforcings.html">RF_HALON1301()</a></code> <code><a href="haloforcings.html">RF_HALON2402()</a></code> <code><a href="haloforcings.html">RF_CH3CL()</a></code> <code><a href="haloforcings.html">RF_CH3BR()</a></code> </p>
+          <p><code><a href="haloforcings.html">RF_CF4()</a></code> <code><a href="haloforcings.html">RF_C2F6()</a></code> <code><a href="haloforcings.html">RF_HFC23()</a></code> <code><a href="haloforcings.html">RF_HFC32()</a></code> <code><a href="haloforcings.html">RF_HFC4310()</a></code> <code><a href="haloforcings.html">RF_HFC125()</a></code> <code><a href="haloforcings.html">RF_HFC134A()</a></code> <code><a href="haloforcings.html">RF_HFC143A()</a></code> <code><a href="haloforcings.html">RF_HFC227EA()</a></code> <code><a href="haloforcings.html">RF_HFC245FA()</a></code> <code><a href="haloforcings.html">RF_SF6()</a></code> <code><a href="haloforcings.html">RF_CFC11()</a></code> <code><a href="haloforcings.html">RF_CFC12()</a></code> <code><a href="haloforcings.html">RF_CFC113()</a></code> <code><a href="haloforcings.html">RF_CFC114()</a></code> <code><a href="haloforcings.html">RF_CFC115()</a></code> <code><a href="haloforcings.html">RF_CCL4()</a></code> <code><a href="haloforcings.html">RF_CH3CCL3()</a></code> <code><a href="haloforcings.html">RF_HCFC22()</a></code> <code><a href="haloforcings.html">RF_HCFC141B()</a></code> <code><a href="haloforcings.html">RF_HCFC142B()</a></code> <code><a href="haloforcings.html">RF_HALON1211()</a></code> <code><a href="haloforcings.html">RF_HALON1301()</a></code> <code><a href="haloforcings.html">RF_HALON2402()</a></code> <code><a href="haloforcings.html">RF_CH3CL()</a></code> <code><a href="haloforcings.html">RF_CH3BR()</a></code> </p>
         </td>
         <td><p>Identifiers for halocarbon forcings</p></td>
       </tr><tr>
@@ -343,13 +374,10 @@
     </table>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-running-hector">Running Hector</a></li>
-      <li><a href="#section-setting-and-retrieving-data">Setting and retrieving data</a></li>
-      <li><a href="#section-variable-and-component-identifiers">Variable and component identifiers</a></li>
-    </ul>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -360,7 +388,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

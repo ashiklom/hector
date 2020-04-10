@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve the current list of biomes for a Hector instance — get_biome_list • hector</title>
+<title>Identifiers for concentration constraints — constraints • hector</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Retrieve the current list of biomes for a Hector instance — get_biome_list" />
-<meta property="og:description" content="Retrieve the current list of biomes for a Hector instance" />
+<meta property="og:title" content="Identifiers for concentration constraints — constraints" />
+<meta property="og:description" content="These identifiers correspond to concentration constraints." />
 
 
 
@@ -129,27 +129,44 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve the current list of biomes for a Hector instance</h1>
+    <h1>Identifiers for concentration constraints</h1>
     
-    <div class="hidden name"><code>get_biome_list.Rd</code></div>
+    <div class="hidden name"><code>constraints.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Retrieve the current list of biomes for a Hector instance</p>
+    <p>These identifiers correspond to concentration constraints.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>get_biome_list</span>(<span class='no'>core</span>)</pre>
+    <pre class="usage"><span class='fu'>CH4_CONSTRAIN</span>()
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>core</th>
-      <td><p>Handle to the Hector instance from which to retrieve
-the biome list.</p></td>
-    </tr>
-    </table>
+<span class='fu'>N2O_CONSTRAIN</span>()</pre>
 
+
+    <h2 class="hasAnchor" id="functions"><a class="anchor" href="#functions"></a>Functions</h2>
+
+    
+<ul>
+<li><p><code>CH4_CONSTRAIN</code>: CH4 concentration constraint <code>"ppbv CH4"</code></p></li>
+<li><p><code>N2O_CONSTRAIN</code>: N2O concentration constraint (<code>"pbbv N2O"</code>)</p></li>
+</ul>
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    
+
+<p>Because these identifiers are provided as <code>#define</code> macros in the hector code,
+these identifiers are provided in the R interface as function.  Therefore,
+these objects must be called to use them; <em>e.g.</em>, <code><a href='msgtype.html'>GETDATA()</a></code>
+instead of the more natural looking <code>GETDATA</code>.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>Other capability identifiers: <code><a href='carboncycle.html'>carboncycle</a></code>,
+  <code><a href='concentrations.html'>concentrations</a></code>, <code><a href='emissions.html'>emissions</a></code>,
+  <code><a href='forcings.html'>forcings</a></code>, <code><a href='haloconstrain.html'>haloconstrain</a></code>,
+  <code><a href='haloemiss.html'>haloemiss</a></code>, <code><a href='haloforcings.html'>haloforcings</a></code>,
+  <code><a href='methane.html'>methane</a></code>, <code><a href='ocean.html'>ocean</a></code>,
+  <code><a href='parameters.html'>parameters</a></code>, <code><a href='so2.html'>so2</a></code>,
+  <code><a href='temperature.html'>temperature</a></code></p></div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
