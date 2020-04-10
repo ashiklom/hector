@@ -243,7 +243,7 @@ test_that('Test fetchvars_all.', {
     # to those returned by fetchvars_all
     vars_date <- c(EMISSIONS_BC(), EMISSIONS_CH4(), LUC_EMISSIONS(),
                    LAND_AIR_TEMP(), ATMOSPHERIC_C(), ATMOSPHERIC_N2O(), FLUX_MIXED())
-    vars_nodate <- c(OCEAN_SURFACE_TEMP())
+    vars_nodate <- c(BETA(), Q10_RH())
 
     rslt_date <- fetchvars(core, year_range, vars_date)
     rslt_nodate <- do.call(rbind,
